@@ -7,8 +7,8 @@ def read_json(filename):
         return json.load(f)
 
 
-data_mobilecity = read_json("../data/json/cellphones_data.json")
-data_cellphones = read_json("../data/json/mobilecity_data.json")
+data_mobilecity = read_json("../data/raw/cellphones_data.json")
+data_cellphones = read_json("../data/raw/mobilecity_data.json")
 
 all_products = data_mobilecity + data_cellphones
 

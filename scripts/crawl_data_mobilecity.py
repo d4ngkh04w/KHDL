@@ -360,14 +360,14 @@ def crawl_products_multithreaded(
 
     # Lưu tất cả kết quả vào một file JSON
     try:
-        os.makedirs("../data/processed", exist_ok=True)
-        with open("../data/processed/mobilecity_data.json", "w", encoding="utf-8") as f:
+        os.makedirs("../data/raw", exist_ok=True)
+        with open("../data/raw/mobilecity_data.json", "w", encoding="utf-8") as f:
             json.dump(results, f, indent=4, ensure_ascii=False)
         print(
-            f"Đã lưu tất cả {len(results)} kết quả vào ../data/processed/mobilecity_data.json"
+            f"Đã lưu tất cả {len(results)} kết quả vào ../data/raw/mobilecity_data.json"
         )
     except Exception as e:
-        print(f"Lỗi khi lưu ../data/processed/mobilecity_data.json: {str(e)}")
+        print(f"Lỗi khi lưu ../data/raw/mobilecity_data.json: {str(e)}")
 
     return results
 
