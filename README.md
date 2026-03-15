@@ -53,10 +53,39 @@ KHDL/
 │       ├── feature_engineering.csv    # Dữ liệu sau khi đã được feature engineering
 │       └── encoded_data_for_ml.csv    # Dữ liệu đã được mã hóa cho mô hình học máy
 │
-└── README.md                        # Tài liệu dự án
+└── README.md                          # Tài liệu dự án
 ```
-## 5. Thứ tự thực thi file
-1. notebooks/craw_data_cellphones.ipynb - Thu thập dữ liệu từ CellphoneS
-2. notebooks/craw_data_mobilecity.ipynb - Thu thập dữ liệu từ MobileCity
-3. notebooks/cleaning_data.ipynb - Tiền xử lý dữ liệu
-4. notebooks/data_analysis.ipynb - Phân tích dữ liệu
+
+## 5. Hướng dẫn cài đặt
+
+### Khởi tạo môi trường ảo
+
+```bash
+# Linux/MacOS
+python3 -m venv .venv && source .venv/bin/activate
+
+# Windows
+python -m venv .venv && .venv\Scripts\activate
+```
+
+### Cài đặt các thư viện cần thiết
+
+```bash
+pip install -r requirements.txt
+```
+
+## 6. Thứ tự thực thi file
+
+1. `scripts/crawl_data_cellphones.py` - Thu thập dữ liệu từ CellphoneS
+2. `scripts/crawl_data_mobilecity.py` - Thu thập dữ liệu từ MobileCity
+3. `scripts/merge_data.py` - Gộp dữ liệu từ hai nguồn
+4. `notebooks/cleaning_data.ipynb` - Tiền xử lý dữ liệu
+5. `notebooks/data_analysis.ipynb` - Phân tích dữ liệu
+
+## 7. Công Nghệ Sử Dụng
+
+- Python: Ngôn ngữ lập trình chính
+- Pandas & NumPy: Xử lý và phân tích dữ liệu
+- Matplotlib & Seaborn: Trực quan hóa dữ liệu
+- Selenium: Thu thập dữ liệu web
+- Scikit-learn: Mã hóa dữ liệu và phân chia tập dữ liệu
