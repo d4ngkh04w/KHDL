@@ -55,3 +55,8 @@ KHDL/
 │
 └── README.md                        # Tài liệu dự án
 ```
+## 5. Thứ tự thực thi file
+1. notebooks/craw_data_cellphones.ipynb - Thu thập dữ liệu từ CellphoneS
+2. notebooks/craw_data_mobilecity.ipynb - Thu thập dữ liệu từ MobileCity
+3. notebooks/cleaning_data.ipynb - Tiền xử lý dữ liệu
+4. notebooks/data_analysis.ipynb - Phân tích dữ liệu
