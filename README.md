@@ -53,6 +53,7 @@ KHDL/
 │       ├── feature_engineering.csv    # Dữ liệu sau khi đã được feature engineering
 │       └── encoded_data_for_ml.csv    # Dữ liệu đã được mã hóa cho mô hình học máy
 │
+├── requirements.txt                   # Thư viện cần thiết cho dự án
 └── README.md                          # Tài liệu dự án
 ```
 
@@ -84,8 +85,8 @@ pip install -r requirements.txt
 
 ## 7. Công Nghệ Sử Dụng
 
-- Python: Ngôn ngữ lập trình chính
-- Pandas & NumPy: Xử lý và phân tích dữ liệu
-- Matplotlib & Seaborn: Trực quan hóa dữ liệu
-- Selenium: Thu thập dữ liệu web
-- Scikit-learn: Mã hóa dữ liệu và phân chia tập dữ liệu
+- `Python`: Ngôn ngữ lập trình chính
+- `Pandas` & `NumPy`: Xử lý và phân tích dữ liệu
+- `Matplotlib` & `Seaborn`: Trực quan hóa dữ liệu
+- `Selenium`: Thu thập dữ liệu web
+- `Scikit-learn`: Mã hóa dữ liệu và phân chia tập dữ liệu
